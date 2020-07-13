@@ -1,0 +1,23 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+
+	<listeners>
+
+		<listener class-name="com.evs.testng.listener.myTestListener"></listener>
+		
+	</listeners>
+
+	<test name="Prctice">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="url" value="https://www.facebook.com"></parameter>
+
+		<classes>
+			<class name="com.evs.testScript.TC001" />
+		</classes>
+
+	</test>
+
+</suite>

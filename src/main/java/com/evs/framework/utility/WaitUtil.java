@@ -9,15 +9,8 @@ public class WaitUtil {
 
 	private static WebDriver driver = WebUtil.driver;
 	
-	public static WebDriverWait getWebdriverWait(web) {
-		
-		WebDriverWait wait=null;
-		
-		if(wait==null) {
-			
-			wait=new WebDriverWait(driver, 20);
-		}
-	}
+
+	
 	public static WebElement waitUntillElementPresent(WebElement element) {
 			
 		WebDriverWait wait=new WebDriverWait(driver, 20);
